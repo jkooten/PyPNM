@@ -1,2 +1,2 @@
 # PyPNM
-Pyhton3 PNM decoders
+Python3 PNM decoders
