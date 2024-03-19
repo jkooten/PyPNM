@@ -19,6 +19,7 @@ if len(name) < 1:
 with open (name, 'rb') as f: 
     bytes = f.read()
     a = binascii.hexlify(bytes, ':')
+    print(a)
     b = a.split(b':')
 
     for number in range(0,4):
@@ -64,6 +65,8 @@ with open (name, 'rb') as f:
     
     #Actual MER data in list
     for number in range(25,int(bytelength, 16)+25):
+        print(number)
+        print(int(b[number],16)/4)
         merlist.append(int(b[number], 16)/4)
     
     #Actuakl Freqs in list
